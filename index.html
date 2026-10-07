@@ -280,7 +280,7 @@ button{cursor:pointer;border:0;background:none}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-</head>
+<style id="atTtlCss">/* 페이지 제목 공통 (ARTE + 제목 + 영문 부제) — 시공자재 리스트 기준 */.at-ttl{display:flex;flex-direction:column;align-items:flex-start;gap:3px;margin:0;line-height:1.35;text-align:left;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif}.at-ttl .r{display:flex;align-items:center;gap:18px}.at-ttl .a{font-size:22px;letter-spacing:5px;color:#9b7e6f;font-weight:600}.at-ttl .t{font-size:17px;color:#454541;font-weight:500;white-space:nowrap;letter-spacing:0}.at-ttl small{display:block;font-size:11px;color:#777770;letter-spacing:1px;font-weight:400}.at-ttl.mini .a{font-size:17px;letter-spacing:4px}.at-ttl.mini .t{font-size:14px}.at-ttl.mini .r{gap:12px}@media(max-width:600px){.at-ttl .a{font-size:19px;letter-spacing:4px}.at-ttl .t{font-size:15px}.at-ttl .r{gap:12px}}.brand .at-ttl small{display:none}.startbrand{display:block;margin-bottom:16px}.start{top:var(--anav-h,63px)!important;padding:20px 18px 28px!important}.start.on{display:flex!important}.start .startbox{margin:auto!important;width:100%;max-width:760px}</style></head>
 <body>
 <!--ARTE-BAR-->
 <style id="arteBarCss">:root{--anav-h:63px}
@@ -348,7 +348,7 @@ window.arteNavSet();
 
   <!-- 상단 바 -->
   <div class="topbar">
-    <div class="brand"><b>아르떼조명</b><span>카드뉴스 생성기</span></div>
+    <div class="brand"><div class="at-ttl mini"><div class="r"><span class="a">ARTE</span><span class="t">카드뉴스 생성기</span></div><small>CARD NEWS BUILDER</small></div></div>
 
     <button class="btn ghost" id="bUndo" title="실행취소 (Ctrl+Z)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a5 5 0 0 1 0 10H9"/><path d="M7 4 3 8l4 4"/></svg></button>
@@ -419,7 +419,7 @@ window.arteNavSet();
 <input type="file" id="fileDoc" accept=".json,application/json" hidden>
 <div class="start" id="startScreen">
   <div class="startbox">
-    <div class="startbrand"><b>아르떼조명</b><span>카드뉴스 생성기</span></div>
+    <div class="startbrand"><div class="at-ttl"><div class="r"><span class="a">ARTE</span><span class="t">카드뉴스 생성기</span></div><small>CARD NEWS BUILDER</small></div></div>
     <h1>무엇을 만들까요?</h1>
     <p class="sub">쓰임에 맞는 크기를 고르면 그에 맞춰 캔버스가 준비됩니다. 나중에 언제든 바꿀 수 있어요.</p>
     <div id="startBody"></div>
